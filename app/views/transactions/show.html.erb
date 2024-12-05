@@ -1,7 +1,3 @@
 <h3>Thank you! The code of your transaction is <%= @transaction.uid %>.</h3>
 
-<ul class="links-list">
-  <li><%= link_to "Create 0-100 USD Transaction", new_transaction_path(type: 'small') %></li>
-  <li><%= link_to "Create 100-1000 USD Transaction", new_transaction_path(type: 'large') %></li>
-  <li><%= link_to "Create >1000 USD Transaction", new_transaction_path(type: 'extra') %></li>
-</ul>
+  <%= render partial: 'links' %>
